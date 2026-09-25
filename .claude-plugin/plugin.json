@@ -1,7 +1,7 @@
 {
   "name": "smartreply",
-  "version": "1.0.1",
-  "description": "AI customer service for e-commerce brands. Manage your SmartReply agent from Claude: automate replies to social media comments and messages, moderate comments, test replies, handle escalations, and approve refunds and replacements.",
+  "version": "1.0.2",
+  "description": "AI customer service for e-commerce brands. Manage your SmartReply agent from your AI assistant: automate replies to social media comments and messages, moderate comments, test replies, handle escalations, and approve refunds and replacements.",
   "author": {
     "name": "SmartReply",
     "email": "support@smartreply.io",
