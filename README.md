@@ -13,7 +13,7 @@ Website: https://smartreply.io
 
 ## Installation
 
-Install SmartReply from the Claude plugin directory, or add this repository as a plugin source and install `smartreply`.
+For local testing, clone this repository and run `claude --plugin-dir ./smartreply-plugin` from its parent folder. Directory installation will be available after approval.
 
 On first use, Claude asks you to sign in to SmartReply. Sign in with your SmartReply account and approve access. Claude can only see and change what your SmartReply user is allowed to access.
 
@@ -47,7 +47,7 @@ Channel connections (Facebook, Instagram, Gmail, and others) are completed insid
 ## Safety
 
 - Changes run with your SmartReply permissions and the scopes you approved.
-- Claude confirms with you before approving or declining refunds, replacements, orders, or address changes, and before sending a reply to a customer.
+- Claude checks the exact action and target before refunds, replacements, orders, address changes, or customer replies. If your request already authorizes those details, it does not ask again.
 - Configuration changes can be rolled back with SmartReply recovery points.
 
 ## Privacy
