@@ -1,0 +1,25 @@
+SmartReply Plugin Distribution License
+
+Copyright (c) 2026 SmartReply. All rights reserved except as granted below.
+
+Permission is granted to download, install, use, copy, and redistribute this
+plugin package without charge for connecting supported AI assistants to the
+SmartReply service. Plugin marketplaces may host, cache, index, display, and
+distribute the package for that purpose. Copies must retain this license and
+copyright notice. Users may modify their local copy for their own use.
+
+Included SmartReply logos may be displayed to identify this plugin and its
+connection to SmartReply. No other trademark rights are granted. Do not present
+a modified package as an official SmartReply release.
+
+This license covers only the files distributed in this plugin repository. It
+does not license SmartReply's backend, private application source code, customer
+data, or third-party services. Access to the SmartReply service is governed by
+its account permissions and terms at
+https://smartreply.io/policy-pages/terms-of-service.
+
+THE PACKAGE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, AND NONINFRINGEMENT. TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE
+COPYRIGHT HOLDER IS NOT LIABLE FOR CLAIMS, DAMAGES, OR OTHER LIABILITY ARISING
+FROM USE OF THE PACKAGE.

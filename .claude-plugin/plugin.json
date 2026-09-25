@@ -1,6 +1,6 @@
 {
   "name": "smartreply",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "AI customer service for e-commerce brands. Manage your SmartReply agent from your AI assistant: automate replies to social media comments and messages, moderate comments, test replies, handle escalations, and approve refunds and replacements.",
   "author": {
     "name": "SmartReply",
@@ -23,5 +23,6 @@
     "smartreply"
   ],
   "mcpServers": "./.mcp.json",
-  "repository": "https://github.com/inchargeads/smartreply-plugin"
+  "repository": "https://github.com/inchargeads/smartreply-plugin",
+  "license": "LicenseRef-SmartReply-Plugin"
 }

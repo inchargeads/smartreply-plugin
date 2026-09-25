@@ -1,5 +1,7 @@
 # SmartReply for Claude and Grok Build
 
+<img src="assets/directory-icon.png" alt="SmartReply" width="96" height="96" />
+
 SmartReply is an AI customer service platform for e-commerce brands. It automates social media customer service, comment moderation, and customer support across Facebook, Instagram, YouTube, Gmail, Shopify, Amazon, and Slack.
 
 This plugin connects your AI assistant to your SmartReply account so you can manage your AI customer service agent directly from your assistant: set it up, tune how it replies to comments and messages, test replies before they go live, search customer conversations, handle escalations, and approve or decline actions like refunds and replacements.
@@ -20,7 +22,8 @@ Clone this repository and start your assistant from its parent folder:
 claude --plugin-dir ./smartreply-plugin
 
 # Grok Build
-grok --plugin-dir ./smartreply-plugin
+grok plugin install ./smartreply-plugin --trust
+grok
 ```
 
 Grok Build supports the included Claude-format manifest, skills, commands, and MCP configuration. Use `/mcps` in Grok Build to inspect or authenticate the SmartReply connection. Marketplace installation is available only after the relevant listing is approved; this package does not imply a Grok web connector listing.
@@ -82,3 +85,11 @@ Authentication uses SmartReply OAuth with S256 PKCE and dynamic client registrat
 The package connects to `app.smartreply.io` for MCP tools and OAuth. Tool results may contain requested company settings, support conversations, and action details, which are shared with the assistant. Customer replies and approved actions can invoke the company's connected providers through SmartReply. Provider passwords and access tokens are not returned as tool content. Provider sign-in stays in SmartReply.
 
 This package contains no executable hooks, install scripts, local MCP processes, or filesystem access tools. It does not include SmartReply application source code or customer data.
+
+
+## License and brand assets
+
+The [SmartReply Plugin Distribution License](LICENSE) permits installation and marketplace distribution of this package. It does not license the private SmartReply application or backend. Included logos may be displayed to identify this plugin.
+
+- Directory logo: [assets/directory-icon.png](assets/directory-icon.png)
+- Composer icon: [assets/composer-icon.png](assets/composer-icon.png)
