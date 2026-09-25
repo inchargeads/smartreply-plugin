@@ -1,16 +1,25 @@
 {
   "name": "smartreply",
   "version": "1.0.0",
-  "description": "Manage SmartReply AI customer support agents, FAQs, instructions, sandbox tests, conversations, and escalations.",
+  "description": "AI customer service for e-commerce brands. Manage your SmartReply agent from Claude: automate replies to social media comments and messages, moderate comments, test replies, handle escalations, and approve refunds and replacements.",
   "author": {
     "name": "SmartReply",
+    "email": "support@smartreply.io",
     "url": "https://smartreply.io"
   },
   "homepage": "https://smartreply.io",
   "keywords": [
+    "customer-service",
     "customer-support",
+    "social-media",
+    "comment-moderation",
+    "ai-agent",
     "ecommerce",
-    "ai-agents",
+    "shopify",
+    "instagram",
+    "facebook",
+    "youtube",
+    "escalations",
     "smartreply"
   ],
   "mcpServers": "./.mcp.json",

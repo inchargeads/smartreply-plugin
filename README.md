@@ -1,37 +1,61 @@
 # SmartReply for Claude
 
-Connect Claude to SmartReply to inspect AI customer support settings, prepare FAQs, update requested instructions, test replies, search conversations, and manage permitted actions and escalations.
+SmartReply is an AI customer service platform for e-commerce brands. It automates social media customer service, comment moderation, and customer support across Facebook, Instagram, YouTube, Gmail, Shopify, Amazon, and Slack.
+
+This plugin connects Claude to your SmartReply account so you can manage your AI customer service agent directly from Claude: set it up, tune how it replies to comments and messages, test replies before they go live, search customer conversations, handle escalations, and approve or decline actions like refunds and replacements.
 
 Website: https://smartreply.io
 
-MCP endpoint: https://app.smartreply.io/api/mcp
+## Requirements
 
-## Package contents
+- A SmartReply account. Sign up at https://smartreply.io.
+- Claude Code, or Claude with plugin support (Cowork).
 
-This standalone package contains the Claude plugin manifest, account-assistance skill, public MCP URL, and brand icons. It contains no application source code, customer data, credentials, or application repository history.
+## Installation
 
-## Authentication and release status
+Install SmartReply from the Claude plugin directory, or add this repository as a plugin source and install `smartreply`.
 
-A SmartReply account is required. Each connection must identify a user and company. Access follows current permissions and OAuth scopes. Use `smartreply:read` for inspection and `smartreply:write` for requested changes. Provider login remains in SmartReply.
+On first use, Claude asks you to sign in to SmartReply. Sign in with your SmartReply account and approve access. Claude can only see and change what your SmartReply user is allowed to access.
 
-This package is prepared for Claude, but Claude authentication has not yet been validated end to end. The existing server was configured with a predefined ChatGPT OAuth client and callback. Before public submission, configure and test the actual Claude client registration and exact callback using the chosen Claude surface. Do not assume the ChatGPT callback works in Claude. Do not loosen redirect validation or publish access tokens in this repository.
+Channel connections (Facebook, Instagram, Gmail, and others) are completed inside SmartReply. Claude gives you the link, and you finish the provider sign-in in your browser. Claude never asks for your passwords or provider tokens.
 
-For temporary tests on a Claude surface that supports manually supplied bearer tokens, the signed-in SmartReply `/mcp/testing` page can issue a one-hour MCP token. A normal SmartReply integration API key is not interchangeable with that token.
+## What you can do
 
-## Example requests
+**Set up your AI customer service agent**
+- "Help me set up SmartReply for my store."
+- "Which of my channels are connected, and are any having problems?"
 
-- List my SmartReply agents and read the selected agent’s current instructions.
-- Add the October promotion to this agent’s instructions, preserving unrelated content.
-- Extract FAQs from this public webpage and prepare the requested configuration.
-- Test this customer question in the sandbox and explain the result.
-- Show accessible escalations and help me respond to the selected customer.
+**Train and tune replies**
+- "Add an instruction that customers can use OCTOBER20 for 20% off during October."
+- "Pull the FAQs from our shipping policy page and add them to my agent."
+- "Why does my agent give the wrong answer about returns? Fix it and test it."
 
-User-requested changes execute directly with permission checks. Preview-only requests do not authorize applying changes. The host may request tool confirmation. Uncertain outcomes must be inspected before retrying.
+**Test before going live**
+- "Test how my agent replies to a comment asking if this product ships to Canada."
 
-## Local validation
+**Manage customer service day to day**
+- "Find the conversation with this customer and pause automatic replies."
+- "Show my open escalations and help me reply to the first one."
+- "Show pending refund requests for my agent."
+- "Undo the instruction change I made this morning."
 
-Run `claude plugin validate .` from this directory. Manifest validation does not establish that remote authentication works.
+## Commands
 
-## Directory submission
+- `/smartreply:escalations` shows escalations waiting on you and helps you respond.
+- `/smartreply:test-reply` tests how your agent answers a customer comment or message.
 
-Use the URL of the separate public repository in Link to plugin. Leave Path within repository blank, because this package is at the repository root. Homepage: https://smartreply.io. Do not submit the private application repository.
+## Safety
+
+- Changes run with your SmartReply permissions and the scopes you approved.
+- Claude confirms with you before approving or declining refunds, replacements, orders, or address changes, and before sending a reply to a customer.
+- Configuration changes can be rolled back with SmartReply recovery points.
+
+## Privacy
+
+SmartReply's privacy policy: https://smartreply.io/policy-pages/privacy-policy
+
+Terms of service: https://smartreply.io/policy-pages/terms-of-service
+
+## Support
+
+Visit https://smartreply.io or email support@smartreply.io.
