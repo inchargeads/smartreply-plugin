@@ -1,0 +1,18 @@
+{
+  "name": "smartreply",
+  "version": "1.0.0",
+  "description": "Manage SmartReply AI customer support agents, FAQs, instructions, sandbox tests, conversations, and escalations.",
+  "author": {
+    "name": "SmartReply",
+    "url": "https://smartreply.io"
+  },
+  "homepage": "https://smartreply.io",
+  "keywords": [
+    "customer-support",
+    "ecommerce",
+    "ai-agents",
+    "smartreply"
+  ],
+  "mcpServers": "./.mcp.json",
+  "repository": "https://github.com/inchargeads/smartreply-plugin"
+}

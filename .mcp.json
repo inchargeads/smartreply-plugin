@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "smartreply": {
+      "type": "http",
+      "url": "https://app.smartreply.io/api/mcp"
+    }
+  }
+}
